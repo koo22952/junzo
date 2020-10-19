@@ -1,0 +1,77 @@
+@mixin desktop {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin desktop-pc {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop-top {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin desktop-below {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin iphone {
+  @media (max-width: 568px) {
+    @content;
+  }
+}
+
+@mixin mobile480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin iphone5 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+/*
+.header {
+  width: 100px;
+  height: 100px;
+  @include pad() {
+    height: auto;
+  }
+  @include iphone5() {
+    height: 30px;
+  }
+  a {
+    color: #000;
+    @include iphone5() {
+      display: none;
+    }
+  }
+}
+*/
+
+/*
+斷點設定
+
+* PC - 1200px
+* iPad - *768px*
+* iPad以下 - *767px*
+* iPhone 6 Plus - *414px (視專案族群)*
+* iPhone 6 - *375px (視專案族群)*
+* iPhone 5、SE - *320px*
+*/

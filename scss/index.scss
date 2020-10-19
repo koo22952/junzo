@@ -1,0 +1,30 @@
+// @import '_variable.scss'
+// @import '_reset.scss'
+// @import '_mix.scss'
+// @import '_extend'
+// @import '_layout'  共同框架，第一層
+
+// module　共用的小組件
+// @import 'module/button'
+// @import 'module/video'
+
+// page 各個頁面
+// @import 'page/index'
+// @import 'page/member'
+
+@import '_reset.scss';
+
+// * {
+//   box-sizing: border-box;
+//   letter-spacing: 0.04rem;
+//   font-family: '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック', YuGothic,
+//     'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo',
+//     sans-serif;
+// }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+@import '_main.scss';
+@import '_grid.scss';
