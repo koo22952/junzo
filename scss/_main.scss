@@ -5,3 +5,128 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  &-logo {
+    width: 37px;
+    margin-top: 19px;
+    margin-left: 19px;
+    &--menuWord {
+      width: 9px;
+      margin-left: 12px;
+      margin-top: 17px;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+  }
+}
+
+.main {
+  &-visual {
+    padding: 20px;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    .banner {
+      margin-left: 15%;
+      height: 83%;
+      position: relative;
+      &-item {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../img/TKBC_0012_X5S0101_S2_2.jpg);
+      }
+    }
+    .word-list {
+      position: absolute;
+      left: 80px;
+      bottom: 80px;
+      .one,
+      .two,
+      .three {
+        height: 68px;
+        > img {
+          height: 100%;
+        }
+      }
+
+      .one {
+        margin-bottom: 57px;
+        img {
+          &:nth-child(1) {
+            margin-left: 1px;
+            margin-right: 15px;
+          }
+          &:nth-child(2) {
+            margin-right: 13px;
+          }
+          &:nth-child(3) {
+            margin-right: 9px;
+          }
+          &:nth-child(4) {
+            margin-right: 6px;
+          }
+        }
+      }
+
+      .two {
+        margin-bottom: 57px;
+        img {
+          &:nth-child(1) {
+            margin-left: 2px;
+            margin-right: 5px;
+          }
+          &:nth-child(2) {
+            margin-right: 14px;
+          }
+          &:nth-child(3) {
+            margin-right: 6px;
+          }
+          &:nth-child(4) {
+            margin-right: 10px;
+          }
+          &:nth-child(5) {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .three {
+        img {
+          // 取兩者交集
+          // -n + 4：從第一個算到第四個
+          // n + 2：從第二個開始算到最後
+          &:nth-child(-n + 4):nth-child(n + 2) {
+            margin-right: 10px;
+          }
+          &:nth-child(5) {
+            margin-right: 14px;
+          }
+          &:nth-child(6) {
+            margin-right: 9px;
+          }
+          &:nth-child(7) {
+            margin-right: 28px;
+          }
+          &:last-child {
+            width: 144px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .bottom-arrow {
+      width: 25px;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+    }
+  }
+}
