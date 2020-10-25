@@ -315,6 +315,237 @@ img {
   bottom: 30px;
 }
 
+.main .selectedWorks {
+  padding-top: 77px;
+  margin-bottom: 172px;
+}
+
+.main .selectedWorks-title {
+  margin-left: 80px;
+  margin-bottom: 62px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.main .selectedWorks .worksBox {
+  margin-bottom: 86px;
+}
+
+.main .selectedWorks .worksBox-title {
+  margin-left: 80px;
+  margin-bottom: 22px;
+  font-size: 13px;
+}
+
+.main .selectedWorks .worksBox-title > h2 {
+  margin-right: 26px;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.main .selectedWorks .worksBox-title > span {
+  margin-top: 22px;
+  display: inline-block;
+  letter-spacing: 1.4px;
+}
+
+.main .selectedWorks .worksBox-imgs {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.main .selectedWorks .worksBox-imgs ul {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.main .selectedWorks .worksBox-imgs ul li {
+  display: inline-block;
+  height: 200px;
+}
+
+.main .selectedWorks .worksBox-imgs ul li img {
+  height: 100%;
+}
+
+.main .selectedWorks .moreWork {
+  text-align: center;
+}
+
+.main .selectedWorks .moreWork a {
+  padding: 1px 42px 7px 34px;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+
+.main .selectedWorks .moreWork a span {
+  position: relative;
+  letter-spacing: 0.6px;
+  padding-left: 14px;
+}
+
+.main .selectedWorks .moreWork a span::before {
+  content: '\002B';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main .selectedWorks .moreWork a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #030000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: height 0.25s ease, bottom 0.25s ease;
+  transition: height 0.25s ease, bottom 0.25s ease;
+}
+
+.main .selectedWorks .moreWork a:hover::after {
+  height: 7px;
+  bottom: -5px;
+}
+
+.main .about {
+  padding: 42px 0 43px 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .about .aboutPic {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+  overflow: hidden;
+}
+
+.main .about .aboutPic .pic img {
+  vertical-align: bottom;
+}
+
+.main .about .aboutCon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 7.5% 0 7.5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .about .aboutCon .aboutIntro {
+  margin-bottom: 30px;
+}
+
+.main .about .aboutCon .aboutIntro .aboutIntroTitle {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 40px;
+}
+
+.main .about .aboutCon .aboutIntro .aboutIntroTitle span {
+  margin-top: 5px;
+  margin-left: -2px;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 4.9px;
+}
+
+.main .about .aboutCon .aboutIntro .aboutIntroMeg {
+  margin-left: -3px;
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  line-height: 2.2;
+}
+
+.main .about .menuCon {
+  width: 100%;
+}
+
+.main .about .menuCon li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 0 0;
+  position: relative;
+}
+
+.main .about .menuCon li span {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.main .about .menuCon li p {
+  margin-top: 3px;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.main .about .menuCon li::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #030000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: height 0.25s ease, bottom 0.25s ease;
+  transition: height 0.25s ease, bottom 0.25s ease;
+}
+
+.main .about .menuCon li:hover::after {
+  content: '';
+  height: 6px;
+  bottom: -5px;
+}
+
+.footer {
+  padding: 20px 25px 20px 35px;
+  margin-top: -109px;
+  position: relative;
+  text-align: right;
+}
+
+.footer .topArrow {
+  width: 25px;
+  margin-bottom: 35px;
+  display: inline-block;
+}
+
+.footer P {
+  margin-right: -2px;
+  font-size: 9px;
+  letter-spacing: 0.65px;
+}
+
 /*
 .header {
   width: 100px;
